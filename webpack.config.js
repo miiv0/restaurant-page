@@ -1,6 +1,5 @@
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export default {
     mode: "development",
@@ -18,15 +17,12 @@ export default {
         new HtmlWebpackPlugin({
             template: "./src/index.html",
         }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-        }),
     ],
     module: {
         rules: [
             {
                 test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
+                use: ["style-loader", "css-loader"],
             },
             {
                 test: /\.html$/i,
