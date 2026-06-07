@@ -1,4 +1,4 @@
-const homePage = `
+export const homePage = `
   <section class="home-hero">
     <h2>Welcome</h2>
     <p>A warm, intimate dining experience. Join us for an unforgettable evening.</p>

@@ -1,4 +1,4 @@
-const aboutPage = `
+export const aboutPage = `
   <section class="page-section">
     <h2 class="page-title">Our Story</h2>
     <p class="about-text">Michael's Eatery was born from a simple belief — that great food is best enjoyed

@@ -1,4 +1,4 @@
-const menuPage = `
+export const menuPage = `
   <section class="page-section">
     <h2 class="page-title">Our Menu</h2>
 
