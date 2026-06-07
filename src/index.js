@@ -1,1 +1,4 @@
-console.log("npx webpack serve, server is running");
+import { } from './home.js'
+import { } from './menu.js'
+import { } from './about.js'
+
