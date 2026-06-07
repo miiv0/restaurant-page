@@ -1,0 +1,1 @@
+console.log("npx webpack serve, server is running");
