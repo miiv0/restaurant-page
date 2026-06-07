@@ -1,6 +1,6 @@
-// webpack.config.js
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 export default {
     mode: "development",
@@ -12,18 +12,21 @@ export default {
     },
     devtool: "eval-source-map",
     devServer: {
-        watchFiles: ["./src/template.html"],
+        watchFiles: ["./src/index.html"],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/template.html",
+            template: "./src/index.html",
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
         }),
     ],
     module: {
         rules: [
             {
                 test: /\.css$/i,
-                use: ["style-loader", "css-loader"],
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
             {
                 test: /\.html$/i,

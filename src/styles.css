@@ -218,3 +218,11 @@ footer {
         flex-direction: column;
     }
 }
+
+#content {
+    transition: opacity 0.3s ease;
+}
+
+#content.hidden {
+    opacity: 0;
+}
