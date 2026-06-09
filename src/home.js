@@ -19,7 +19,7 @@ export const homePage = `
     <div class="info-block">
       <h3>Reservations</h3>
       <p>(000) 000-0000</p>
-      <p>Walk-ins welcome</p>
-    </div>
+      <p>Walk-ins welcome</p> 
+    </div> 
   </section>
 `;
